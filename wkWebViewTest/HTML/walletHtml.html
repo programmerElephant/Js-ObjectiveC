@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>walletProj</title>
+</head>
+<body>
+
+    <!--load lib-->
+<!--    <script charset = "utf-8" src="./Web3.js" type="text/javascript"></script>-->
+<!--    <script charset = "utf-8" src="./ethers-v3.min.js" type="text/javascript"></script>-->
+<!--    <script src = "./ipfs-index.min.js"></script>-->
+<!--    <script src = "./COTWallet.js"></script>-->
+<!--    <script src = "./jquery-3.3.1.min.js"></script>-->
+<!--    <script type = "text/javascript">-->
+
+        
+        <script src="./modifyXHR.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js" charset="utf-8"></script>
+    <script src="./jsipfs.js" charset="utf-8"></script>
+    <script src="./IpfsApi.js" charset="utf-8"></script>
+    <script src="./orbitdb.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        
+    var listArraies = [];
+    
+    function backNameMore(name){
+        try{
+           var result = {"functionName":"backNameMore","value":name}
+        }catch(error){
+            return error;
+        }
+        
+        
+        return result;
+    }
+    
+    function backName(name){
+        window.webkit.messageHandlers.backName.postMessage(name);
+    }
+    
+    function alertName(name){
+        alert(name);
+    }
+        
+    </script>
+
+</body>
+</html>
